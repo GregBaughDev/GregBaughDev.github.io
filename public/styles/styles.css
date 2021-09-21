@@ -39,6 +39,7 @@ body {
     color: var(--text-color);
     background-color: #0A05F1;
     font-size: 25px;
+    --webkit-font-smoothing: antialiased;
 }
 
 h1 {

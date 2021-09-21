@@ -1,0 +1,92 @@
+/* Global */
+:root {
+    --text-color: #FAFF00; 
+}
+
+@font-face {
+    font-family: Standard;
+    src: url('./assets/fonts/stan-book.woff') format('woff'),
+        url('./assets/fonts/stan-book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Standard;
+    src: url('./assets/fonts/stan-bol-it.woff') format('woff'),
+        url('./assets/fonts/stan-bol-it.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Standard;
+    src: url('./assets/fonts/stan-bol.woff') format('woff'),
+        url('./assets/fonts/stan-bol.woff2') format('woff2');
+    font-weight: 700;
+}
+
+*, 
+*::after, 
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Standard', Helvetica, 'sans-serif';
+    color: var(--text-color);
+    background-color: #0A05F1;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1, h2, p {
+    margin: 2vh 0;
+}
+
+a {
+    color: var(--text-color)
+}
+
+ul > li {
+    margin-left: 2vw;
+}
+
+section {
+    padding: 5vh 0;
+}
+
+/* Header */
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: georgian;
+}
+
+/* Main */
+main {
+    width: 75vw;
+    margin: 5vh auto;
+}

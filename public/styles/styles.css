@@ -1,6 +1,7 @@
 /* Global */
 :root {
     --text-color: #FAFF00; 
+    --primary-color: #0A05F1;
 }
 
 @font-face {
@@ -37,7 +38,7 @@
 body {
     font-family: 'Standard', Helvetica, 'sans-serif';
     color: var(--text-color);
-    background-color: #0A05F1;
+    background-color: var(--primary-color);
     font-size: 25px;
     --webkit-font-smoothing: antialiased;
 }
@@ -56,10 +57,6 @@ h1, h2, p {
 
 a {
     color: var(--text-color)
-}
-
-ul > li {
-    margin-left: 2vw;
 }
 
 section {
@@ -82,12 +79,38 @@ nav {
     justify-content: space-between;
 }
 
-nav ul {
-    list-style: georgian;
+/* Main */
+/* Intro section */
+section:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Main */
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+img {
+    width: 20vw;
+    border-radius: 50%;
+}
+
 main {
     width: 75vw;
     margin: 5vh auto;
+}
+
+/* Project section */
+p span {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#projects p {
+    display: flex;
+    justify-content: space-between;
 }

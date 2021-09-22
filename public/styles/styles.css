@@ -72,6 +72,10 @@ header {
     padding: 0 2vw;
 }
 
+header h3 a {
+    text-decoration: none;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -113,4 +117,12 @@ p span {
 #projects p {
     display: flex;
     justify-content: space-between;
+}
+
+#projects a {
+    text-decoration: none;
+}
+
+#projects p a:hover {
+    text-decoration: underline;
 }

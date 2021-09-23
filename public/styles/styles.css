@@ -126,3 +126,15 @@ p span {
 #projects p a:hover {
     text-decoration: underline;
 }
+
+/* FizzBuzz */
+.ital {
+    font-style: italic;
+    font-size: unset;
+}
+
+#fb-result {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(10, 10%);
+}

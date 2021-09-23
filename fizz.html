@@ -9,18 +9,38 @@
 </head>
 <body>
     <header>
-        <h3>Greg Baugh</h3>
+        <h3><a href="index.html">Greg Baugh</a></h3>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
         </nav>
     </header>
     <main>
         <div>
             <h2>FizzBuzz!</h2>
-            <h3><a href="">View the code</a></h3>
+            <h3><a target="_blank" href="https://github.com/GregBaughDev/GregBaughDev.github.io/blob/Fizz/public/js/fizz.js">View the code</a></h3>
         </div>
+        <section>
+            <p>FizzBuzz prints out <span class="ital">'Fizz'</span> if a number is divisible by 3
+            and <span class="ital">'Buzz'</span> if a number is divisible by 5. If a number is divisible by both 5 and 3
+            <span class="ital">'FizzBuzz'</span> is printed!</p>
+            <h4>Instructions:</h4>
+            <p>Enter two numbers between 1 and 100. The first must be lower than the second and they must both be integers.</p>
+            <form>
+                <label for="first">Number 1:</label><span id="fb-num-1"></span>
+                <input type="number" name="first" id="first" min="1" max="100" required>
+                <label for="second">Number 2:</label><span id="fb-num-2"></span>
+                <input type="number" name="second" id="second" min="1" max="100" required>
+                <button type="submit">Submit!</button>
+            </form>
+            <section>
+                <h4>Results</h4>
+                <div id="fb-result">
+                </div>
+            </section>
+        </section>
     </main>
+    <script src="./public/js/fizz.js"></script>
 </body>
 </html>

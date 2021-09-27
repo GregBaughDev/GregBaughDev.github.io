@@ -27,11 +27,14 @@
             <span class="ital">'FizzBuzz'</span> is printed!</p>
             <h4>Instructions:</h4>
             <p>Enter two numbers between 1 and 100. The first must be lower than the second and they must both be integers.</p>
-            <form>
-                <label for="first">Number 1:</label><span id="fb-num-1"></span>
-                <input type="number" name="first" id="first" min="1" max="100" required>
-                <label for="second">Number 2:</label><span id="fb-num-2"></span>
-                <input type="number" name="second" id="second" min="1" max="100" required>
+            <form class="flex flex-column">
+                <h5 class="errors"></h5>
+                <div class="flex flex-row">
+                    <label for="first">Number 1:</label><span id="fb-num-1"></span>
+                    <input type="number" name="first" id="first" min="1" max="100" required>
+                    <label for="second">Number 2:</label><span id="fb-num-2"></span>
+                    <input type="number" name="second" id="second" min="1" max="100" required>
+                </div>
                 <button type="submit">Submit!</button>
             </form>
             <section>

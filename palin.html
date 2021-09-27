@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greg Baugh || Full Stack Developer || Melbourne</title>
+    <link rel="stylesheet" href="./public/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h3><a href="index.html">Greg Baugh</a></h3>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Palindrome</h2>
+            <h3><a target="_blank" href="">View the code</a></h3>
+        </div>
+        <section>
+            <p>Palindrome will tell you if the word you enter is a palindrome or not. A palindrome is a word that reads the same backwards as it does forwards.</p>
+            <form class="flex flex-column">
+                <div class="flex flex-row">
+                    <label for="word">Enter a word:</label>
+                    <input type="text" name="word" id="word" required>
+                </div>
+                <button type="submit">Submit!</button>
+            </form>
+        </section>
+        <h4 id="palin-result"></h4>
+    </main>
+    <script src="./public/js/palin.js"></script>
+</body>
+</html>

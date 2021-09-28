@@ -141,6 +141,17 @@ p span {
     text-decoration: underline;
 }
 
+.flex-proj-head img {
+    border-radius: 10px;
+    max-height: 50vh;
+    min-height: 50vh;
+    width: auto;
+}
+
+.flex-proj-head div:nth-child(2) {
+    align-self: center;
+}
+
 /* FizzBuzz */
 .ital {
     font-style: italic;
@@ -179,8 +190,13 @@ button {
     align-self: center;
 }
 
-/* Palindrom */
+/* Palindrome */
 #palin-result {
     text-align: center;
     font-size: 2rem;
+}
+
+/* Media queries */
+@media (max-width: 1300px){
+    
 }

@@ -25,10 +25,13 @@ let projects = [
     },
     {
         name: "E-Trading Post",
-        projectLink: "https://github.com/GregBaughDev/E-Trading_Post",
+        projectLink: "https://e-trading-post.herokuapp.com/",
         codeLink: "https://github.com/GregBaughDev/E-Trading_Post",
-        description: "E-Trading Post...",
-        images: [],
+        description: "E-Trading Post is a product listing site which allows users to add products for sale. Products can either be listed as either auction or 'buy it now'.",
+        description2: "This web application was built as part of my Diploma course in ICT (Back end web development). Currently, the application allows any user to add or edit products on the site. The project required me to design the UI and develop the CRUD functionality for the application. On future developments I would add user sign up and login to allow only registered users to add products and product owners to edit their own listings.",
+        images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1632888011/Projects/E-Trading/ET2_avovew.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1632888011/Projects/E-Trading/ET1_rjulwj.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1632888010/Projects/E-Trading/ET3_ddq3jn.png"],
         technologies: ['HTML', 'CSS', 'PHP', 'MySQL', 'Figma']
     },
     {

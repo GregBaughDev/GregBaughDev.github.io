@@ -37,10 +37,13 @@ let projects = [
     {
         name: "Mr. Coffee",
         projectLink: "https://github.com/GregBaughDev/INCO-Academy-INCODE-Project-3",
-        codeLink: "https://github.com/GregBaughDev/INCO-Academy-INCODE-Project-3",
-        description: "Coming Soon",
-        images: [],
-        technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'EJS', 'Postgres']
+        codeLink: "https://github.com/GregBaughDev/INCO-Academy-INCODE-Project-3/tree/3c",
+        description: "This project is a web application I built as part of my full stack web development bootcamp. The application allows staff at a fictional business to view their work schedules. Users can input new schedules and create new user records.",
+        description2: "As per the project requirements, the application is built using NodeJS and Express on the backend and HTML and CSS on the front end. The project suggested to use EJS for the templating engine but as I already had experience using this I used the Handlebars templating engine. We were also required to use Postgres as the database for this project. I had used NoSQL databases before with Express so this project was a good opportunity to use SQL in an Express application. As I am familiar with connecting to a SQL database in PHP, this wasn't too difficult to do in Express/NodeJS.",
+        images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1633071002/Projects/Coffee/coffee1_nxez1w.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633070999/Projects/Coffee/coffee3_g1pf78.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633070999/Projects/Coffee/coffee2_frbbba.png"],
+        technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'Handlebars', 'Postgres']
     },
     {
         name: "Assorted Graphic Design Work"
@@ -67,6 +70,7 @@ document.querySelector("#project").innerHTML = `<a target='_blank' href='${proje
 document.querySelector("#code").innerHTML = `<a target='_blank' href='${projects[parseInt(projectSelect)].codeLink}'>Code</a>`
 document.querySelector("#description").textContent = projects[parseInt(projectSelect)].description
 document.querySelector("#description2").textContent = projects[parseInt(projectSelect)].description2
+document.querySelector("title").textContent = `Greg Baugh || ${projects[parseInt(projectSelect)].name}`
 
 const techlist = document.createElement("ul")
 

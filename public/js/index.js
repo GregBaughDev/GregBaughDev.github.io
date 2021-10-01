@@ -38,7 +38,7 @@ let projects = [
         name: "Mr. Coffee",
         projectLink: "https://github.com/GregBaughDev/INCO-Academy-INCODE-Project-3",
         codeLink: "https://github.com/GregBaughDev/INCO-Academy-INCODE-Project-3",
-        description: "Mr. Coffee...",
+        description: "Coming Soon",
         images: [],
         technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'EJS', 'Postgres']
     },
@@ -48,7 +48,7 @@ let projects = [
     {
         name: "Lucy Wilkins Fashion",
         projectLink: "https://www.lucywilkinsfashion.com/shop",
-        description: "Lucy Wilkins Fashion...",
+        description: "Coming Soon",
         images: [],
         technologies: ['Figma']
     },
@@ -56,7 +56,7 @@ let projects = [
         name: "bridgr",
         projectLink: "https://github.com/GregBaughDev/bridgr",
         codeLink: "https://github.com/GregBaughDev/bridgr",
-        description: "bridgr...",
+        description: "Coming Soon",
         images: [],
         technologies: ['HTML', 'CSS', 'JavaScript', 'Google Chrome']
     }
@@ -78,14 +78,18 @@ for(let tech in projects[parseInt(projectSelect)].technologies){
 
 document.querySelector(".project-body").prepend(techlist)
 
-let imageCount = 1
-document.querySelector("#proj-image").setAttribute("src", projects[parseInt(projectSelect)].images[imageCount])
-setInterval(() => {
-    if(imageCount == projects[parseInt(projectSelect)].images.length - 1){
-        imageCount = 0
-    } else {
-        imageCount++;
-    }
+if(projects[parseInt(projectSelect)].images.length > 0){
+    let imageCount = 1
     document.querySelector("#proj-image").setAttribute("src", projects[parseInt(projectSelect)].images[imageCount])
-    console.log(imageCount)
-}, 3000)
+    setInterval(() => {
+        if(imageCount == projects[parseInt(projectSelect)].images.length - 1){
+            imageCount = 0
+        } else {
+            imageCount++;
+        }
+        document.querySelector("#proj-image").setAttribute("src", projects[parseInt(projectSelect)].images[imageCount])
+        console.log(imageCount)
+    }, 3000)
+} else {
+    document.querySelector(".proj-image-holder").setAttribute("style", "display: none")
+}

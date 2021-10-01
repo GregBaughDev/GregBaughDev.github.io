@@ -57,7 +57,7 @@ let projects = [
     },
     {
         name: "bridgr",
-        projectLink: "https://github.com/GregBaughDev/bridgr",
+        projectLink: "https://bridgr-extension.herokuapp.com/",
         codeLink: "https://github.com/GregBaughDev/bridgr",
         description: "Coming Soon",
         images: [],

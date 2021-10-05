@@ -1,6 +1,6 @@
-let projectSelect = location.href.split("?")[1]
+const projectSelect = location.href.split("?")[1]
 
-let projects = [
+const projects = [
     {
         name: "Task Manage",
         projectLink: "https://taskmanage2.herokuapp.com/",
@@ -46,10 +46,6 @@ let projects = [
         technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'Handlebars', 'Postgres']
     },
     {
-        name: "Assorted Graphic Design Work",
-        description: "Coming Soon"
-    },
-    {
         name: "Lucy Wilkins Fashion",
         projectLink: "https://www.lucywilkinsfashion.com",
         description: "Lucy Wilkins Fashion' is a client project I completed for the Melbourne based fashion and costume designer. Following the client brief I created mockups and designs using Figma. I then completed the project using Wix (as per the clients requirements). I integrated purchasing functionality, stock management and social media connections. I used the inbuilt tools to allow the client to update and add information and stock as they required. I also provided the client with training documentation.",
@@ -91,6 +87,7 @@ document.querySelector(".project-body").prepend(techlist)
 if(projects[parseInt(projectSelect)].images.length > 0){
     let imageCount = 1
     document.querySelector("#proj-image").setAttribute("src", projects[parseInt(projectSelect)].images[imageCount])
+    document.querySelector("#proj-image").setAttribute("alt", `Screenshots from ${projects[parseInt(projectSelect)].name} project`)
     setInterval(() => {
         if(imageCount == projects[parseInt(projectSelect)].images.length - 1){
             imageCount = 0

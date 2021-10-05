@@ -8,24 +8,24 @@
 
 @font-face {
     font-family: Standard;
-    src: url('./assets/fonts/stan-book.woff') format('woff'),
-        url('./assets/fonts/stan-book.woff2') format('woff2');
+    src: url('../assets/fonts/stan-book.woff') format('woff'),
+        url('../assets/fonts/stan-book.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: Standard;
-    src: url('./assets/fonts/stan-bol-it.woff') format('woff'),
-        url('./assets/fonts/stan-bol-it.woff2') format('woff2');
+    src: url('../assets/fonts/stan-bol-it.woff') format('woff'),
+        url('../assets/fonts/stan-bol-it.woff2') format('woff2');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: Standard;
-    src: url('./assets/fonts/stan-bol.woff') format('woff'),
-        url('./assets/fonts/stan-bol.woff2') format('woff2');
+    src: url('../assets/fonts/stan-bol.woff') format('woff'),
+        url('../assets/fonts/stan-bol.woff2') format('woff2');
     font-weight: 700;
 }
 

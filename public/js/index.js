@@ -98,7 +98,6 @@ if(projects[parseInt(projectSelect)].images.length > 0){
             imageCount++;
         }
         document.querySelector("#proj-image").setAttribute("src", projects[parseInt(projectSelect)].images[imageCount])
-        console.log(imageCount)
     }, 3000)
 } else {
     document.querySelector(".proj-image-holder").setAttribute("style", "display: none")

@@ -199,10 +199,24 @@ button {
 }
 
 /* Media queries */
-@media (max-width: 1000px){
+@media (max-width: 1300px) {
+    .project-body ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
     ul {
         flex-direction: column;
     }
+
+    .flex-proj-head img {
+        border-radius: 10px;
+        max-height: 15vh;
+        min-height: 15vh;
+        width: auto;
+    }
+
 }
 
 @media (max-width: 900px) {

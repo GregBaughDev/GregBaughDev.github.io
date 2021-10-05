@@ -211,10 +211,8 @@ button {
     }
 
     .flex-proj-head img {
-        border-radius: 10px;
-        max-height: 15vh;
-        min-height: 15vh;
-        width: auto;
+        max-height: 50vh;
+        min-height: 50vh;
     }
 
 }
@@ -237,5 +235,10 @@ button {
 
     section:first-child img {
         display: none;
+    }
+
+    .flex-proj-head img {
+        max-height: 30vh;
+        min-height: 30vh;
     }
 }

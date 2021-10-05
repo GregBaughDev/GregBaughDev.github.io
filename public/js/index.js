@@ -46,28 +46,34 @@ let projects = [
         technologies: ['HTML', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'Handlebars', 'Postgres']
     },
     {
-        name: "Assorted Graphic Design Work"
+        name: "Assorted Graphic Design Work",
+        description: "Coming Soon"
     },
     {
         name: "Lucy Wilkins Fashion",
-        projectLink: "https://www.lucywilkinsfashion.com/shop",
-        description: "Coming Soon",
-        images: [],
-        technologies: ['Figma']
+        projectLink: "https://www.lucywilkinsfashion.com",
+        description: "Lucy Wilkins Fashion' is a client project I completed for the Melbourne based fashion and costume designer. Following the client brief I created mockups and designs using Figma. I then completed the project using Wix (as per the clients requirements). I integrated purchasing functionality, stock management and social media connections. I used the inbuilt tools to allow the client to update and add information and stock as they required. I also provided the client with training documentation.",
+        description2: "Quote from Lucy Wilkins (client): 'Greg did a wonderful job on my website! So easy to work with, patient and such great website building knowledge. They listened to all my requests and executed them beautifully. If you are looking for a website designer/builder look no further! Highly recommend Greg!'",
+        images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1633395845/Projects/Lucy/LW1_umixud.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633395844/Projects/Lucy/LW2_iozdvv.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633395844/Projects/Lucy/LW3_vqw39j.png"],
+        technologies: ['Figma', 'Wix']
     },
     {
         name: "bridgr",
         projectLink: "https://bridgr-extension.herokuapp.com/",
         codeLink: "https://github.com/GregBaughDev/bridgr",
-        description: "Coming Soon",
-        images: [],
+        description: "bridgr is a Chrome extension that displays a random lyric by the American singer/songwriter Phoebe Bridgers. This project was built as a personal project as I wanted to learn how to make extensions for Google Chrome. If installed, the extension will display a lyric along with the current date and time when a new browser is opened. The lyrics are held in an array and are randomly selected and displayed on the page.",
+        description2: "This was an interesting project and after I had deployed it to my local browser I discovered strange styling issues on webpages. After further investigation I realised my CSS classes and ID's were being applied to all websites when the extension was engaged. I created very detailed CSS class and ID names to resolve the issue.",
+        images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg2_rlx3lu.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg1_snwgtb.png"],
         technologies: ['HTML', 'CSS', 'JavaScript', 'Google Chrome']
     }
 ]
 
 document.querySelector("#title").textContent = `${projects[parseInt(projectSelect)].name}`
-document.querySelector("#project").innerHTML = `<a target='_blank' href='${projects[parseInt(projectSelect)].projectLink}'>Demo</a>`
-document.querySelector("#code").innerHTML = `<a target='_blank' href='${projects[parseInt(projectSelect)].codeLink}'>Code</a>`
+projects[parseInt(projectSelect)].projectLink ? document.querySelector("#project").innerHTML = `<a target='_blank' href='${projects[parseInt(projectSelect)].projectLink}'>Live Project</a>` : null
+projects[parseInt(projectSelect)].codeLink ? document.querySelector("#code").innerHTML = `<a target='_blank' href='${projects[parseInt(projectSelect)].codeLink}'>Code</a>` : null
 document.querySelector("#description").textContent = projects[parseInt(projectSelect)].description
 document.querySelector("#description2").textContent = projects[parseInt(projectSelect)].description2
 document.querySelector("title").textContent = `Greg Baugh || ${projects[parseInt(projectSelect)].name}`

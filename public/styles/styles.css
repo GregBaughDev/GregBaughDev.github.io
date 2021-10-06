@@ -149,6 +149,7 @@ p span {
     max-height: 50vh;
     min-height: 50vh;
     width: auto;
+    margin-top: 3vh;
 }
 
 .flex-proj-head div:nth-child(2) {

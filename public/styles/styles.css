@@ -3,7 +3,8 @@
     /* --text-color: #FAFF00;  */
     --text-color: rgb(231, 231, 231); 
     /* --primary-color: #0A05F1; */
-    --primary-color: #000000;
+    /* --primary-color: #000000; */
+    --primary-color: #292929;
 }
 
 @font-face {
@@ -152,6 +153,33 @@ p span {
 
 .flex-proj-head div:nth-child(2) {
     align-self: center;
+}
+
+/* Design work */
+#design-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#design-display div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#design-display div button {
+    width: 10vw;
+}
+
+#design-image {
+    height: 70vh;
+}
+
+#design-tag {
+    height: 15vh;
+    width: 50vw;
 }
 
 /* FizzBuzz */

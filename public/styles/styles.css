@@ -109,10 +109,15 @@ section:first-child {
     justify-content: space-between;
 }
 
-ul {
+.list-holder {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.list-holder ul {
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -235,7 +240,7 @@ button {
 }
 
 @media (max-width: 1000px) {
-    ul {
+    .list-holder {
         flex-direction: column;
     }
 

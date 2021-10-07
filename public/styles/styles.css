@@ -252,11 +252,39 @@ button {
         max-height: 50vh;
         min-height: 50vh;
     }
+
+    /* Palindrome page */
+    .palin {
+        flex-direction: column;
+    }
+
+    .palin label, .palin input {
+        width: 75%;
+    }
+
+    /* Design Page */
+    #design-image {
+        height: 35vh;
+    }
 }
 
 @media (max-width: 900px) {
     #projects p {
         flex-direction: column;
+    }
+
+    /* FizzBuzz page */
+    .fizz {
+        flex-direction: column;
+    }
+
+    .fizz label, .fizz input {
+        width: 50%;
+    }
+
+    #fb-result {
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(5, auto);
     }
 }
 
@@ -279,8 +307,18 @@ button {
         min-height: 30vh;
     }
 
-    .project-body p {
+    .project-body p, .p-body p {
         font-size: 1.5rem;
+    }
+
+    /* FizzBuzz page */ 
+    .p-body form button {
+        width: 50%;
+    }
+
+    #fb-result {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
     }
 }
 
@@ -290,7 +328,12 @@ button {
         min-height: 20vh;
     }
 
-    .project-body p {
+    .project-body p, .p-body p {
         font-size: 1rem;
+    }
+
+    /* FizzBuzz page */
+    .fizz label, .fizz input {
+        width: 75%;
     }
 }

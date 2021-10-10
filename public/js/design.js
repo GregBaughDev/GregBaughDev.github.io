@@ -34,6 +34,7 @@ const images = [
 
 document.querySelector("#design-image").setAttribute("src", images[imgCount].image)
 document.querySelector("#design-tag").textContent = images[imgCount].tagline
+document.querySelector("#design-display a").href = images[imgCount].image
 
 for(let button of buttons){
     button.addEventListener("click", (e) => {
@@ -48,6 +49,7 @@ for(let button of buttons){
             imgCount = images.length - 1
         }
         document.querySelector("#design-image").setAttribute("src", images[imgCount].image)
+        document.querySelector("#design-display a").href = images[imgCount].image
         document.querySelector("#design-tag").textContent = images[imgCount].tagline
     })
 }

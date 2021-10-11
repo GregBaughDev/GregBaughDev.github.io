@@ -59,8 +59,8 @@ const projects = [
         name: "bridgr",
         projectLink: "https://bridgr-extension.herokuapp.com/",
         codeLink: "https://github.com/GregBaughDev/bridgr",
-        description: "bridgr is a Chrome extension that displays a random lyric by the American singer/songwriter Phoebe Bridgers. This project was built as a personal project as I wanted to learn how to make extensions for Google Chrome. If installed, the extension will display a lyric along with the current date and time when a new browser is opened. The lyrics are held in an array and are randomly selected and displayed on the page.",
-        description2: "This was an interesting project and after I had deployed it to my local browser I discovered strange styling issues on webpages. After further investigation I realised my CSS classes and ID's were being applied to all websites when the extension was engaged. I created very detailed CSS class and ID names to resolve the issue.",
+        description: "bridgr is a Chrome extension that displays a random lyric by the American singer/songwriter Phoebe Bridgers. This project was built as a personal project as I wanted to learn how to make extensions for Google Chrome. The extension displays a lyric along with the current date and time when a new tab is opened. The lyrics are held in an array and are randomly selected and displayed on the page.",
+        description2: "This was an interesting project and after I had deployed it to my local browser I discovered strange styling issues on webpages. After further investigation I realised my CSS classes and ID's were being applied to all websites when the extension was engaged. I updated my CSS class and ID names to resolve the issue.",
         images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg2_rlx3lu.png",
             "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg1_snwgtb.png"],
         technologies: ['HTML', 'CSS', 'JavaScript', 'Google Chrome']

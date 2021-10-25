@@ -64,6 +64,16 @@ const projects = [
         images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg2_rlx3lu.png",
             "https://res.cloudinary.com/dbdcclhzw/image/upload/v1633397141/Projects/bridgr/bridg1_snwgtb.png"],
         technologies: ['HTML', 'CSS', 'JavaScript', 'Google Chrome']
+    },
+    {
+        name: "News App",
+        projectLink: "https://react-ts-news.herokuapp.com/",
+        codeLink: "https://github.com/GregBaughDev/react-ts-news",
+        description: "'News App' is a web application built with React and TypeScript. The app utilises the Guardian API to retrieve news stories and search topics.",
+        description2: "I built the app so I could put my TypeScript learning into practice. I quickly picked up syntax and logic behind Typescript but implementing it within a React project was fairly challenging. I learnt a lot during the development of this app, including how to use TS with hooks (state and ref), props and functions.",
+        images: ["https://res.cloudinary.com/dbdcclhzw/image/upload/v1635204543/Projects/News/NA1_rdyxw1.png",
+            "https://res.cloudinary.com/dbdcclhzw/image/upload/v1635204543/Projects/News/NA2_ord4kg.png"],
+        technologies: ['HTML', 'CSS', 'React', 'TypeScript', 'Styled Components']
     }
 ]
 
